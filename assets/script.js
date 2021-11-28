@@ -32,8 +32,7 @@ function passLenght () { //function length
     }
   }
 
-//
-
+  
 var generateBtn = document.querySelector("#generate");
 
 generateBtn.addEventListener("click", writePassword);
