@@ -31,6 +31,32 @@ function passLenght () { //function length
       return pLenght;
     }
   }
+  var generatePassword = function() {
+    arraySplit = ""; 
+    exitApplication = false; 
+    userInput = ""; 
+    finalPassword = ""; 
+    displayPassword = "";
+ 
+   window.alert("The password will be lowercase, uppercase, numeric, and/or special characters.");
+ 
+   var validInput = true;
+
+   //Response - to the orignal alert window. 
+   while(validInput) {
+    userInput = window.prompt("Options: (if you want to pick multiple keep a space between each) 1 = lowercase 2 = uppercase 3 = numeric 4 = special characters.\n");
+    if (!userInput) {
+      window.alert("If you wish to close the application, please close this password generator tab.")
+      generatePassword();
+      } else if (userInput) {
+    userInput = userInput.split(" ");
+    arraySplit = userInput.slice(0,userInput.length);
+  
+    window.alert("You have selected: " + arraySplit);
+    validInput = false;
+
+  //
+
 
   
 var generateBtn = document.querySelector("#generate");
